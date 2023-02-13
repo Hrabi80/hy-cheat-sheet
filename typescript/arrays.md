@@ -13,6 +13,8 @@ Method | Description
 `slice()` | Adds or removes elements from the array
 `include()` | Checks whether the array contains a certain element
 `join()` | Joins all elements of the array into a string
+`map()` | make a treatment of all elements in an array
+`filter()` | filter elements in the array according to aa condition
 
 ## Examples
 
@@ -22,4 +24,19 @@ Method | Description
 ### concat
 ```typescript
     fruits=fruits.concat(['Fig','Mango'])
+    // console.log(fruits) : ['Apple', 'Orange', 'Banana','Fig,'Mango']
+```
+### map
+```typescript
+    fruits.map(function (element){
+        console.log(element.toUpperCase());
+        // APPLE
+        // ORANGE
+        // BANANA...
+    })
+```
+### map
+```typescript
+    filtred_table= fruits.filter((element)=> element.length == 3);
+    //console.log(filted_table) : ['fig']
 ```
